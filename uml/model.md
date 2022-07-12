@@ -28,19 +28,19 @@
 
 ### Activity Diagram
 
-![Activity-Diagram](Activity-Diagram.png)
+![Activity-Diagram](Activity_Diagram.png)
 
 ### Sequence Diagram
 
-![Sequence-Diagram](Sequence-Diagram.png)
+![Sequence-Diagram](Sequence_Diagram.png)
 
 ### State Diagram
 
-![State-Diagram](State-Diagram.png)
+![State-Diagram](State_Diagram.png)
 
 ### Class Diagram
 
-![Class-Diagram](Class-Diagram.png)
+![Class-Diagram](Class_Diagram.png)
 
 ### Libraries ️
 
