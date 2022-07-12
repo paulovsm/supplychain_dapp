@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-07-12T21:46:02.032Z" agent="5.0 (Windows)" etag="AV4qztiQRvKpb-p2Dj4a" version="20.1.1" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2022-07-12T22:16:02.293Z" agent="5.0 (Windows)" etag="hlhurmg_Y_l2XMccfn4-" version="20.1.1" type="github" pages="4">
   <diagram name="Activity Diagram" id="e7e014a7-5840-1c2e-5031-d8a46d1fe8dd">
     <mxGraphModel dx="1483" dy="806" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="826" background="none" math="0" shadow="0">
       <root>
@@ -402,6 +402,98 @@
         </mxCell>
         <mxCell id="swgkuPsOOCJP-xETYmcG-61" value="" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#ff0000;" vertex="1" parent="1">
           <mxGeometry x="1070" y="405" width="30" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="5xgqiQHF2UoAkk8qLuEc" name="Class Diagram">
+    <mxGraphModel dx="1597" dy="868" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="B_T8Sf8zg4tagg7H50_3-7" value="Roles" style="verticalAlign=top;align=center;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="480" y="40" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="B_T8Sf8zg4tagg7H50_3-9" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;FarmerRole&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ isFarmer(address): bool&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ addFarmer(account)&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+renounceFarmer()&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+_addFarmer(account)&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ _removeFarmer(account)&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="170" width="160" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="B_T8Sf8zg4tagg7H50_3-11" value="Use" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;entryX=-0.009;entryY=0.597;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.463;exitY=-0.013;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="B_T8Sf8zg4tagg7H50_3-9" target="B_T8Sf8zg4tagg7H50_3-7">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="360" y="160" as="sourcePoint" />
+            <mxPoint x="520" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="B_T8Sf8zg4tagg7H50_3-12" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;DistributorRole&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ isDistributor(address): bool&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ addDistributor(account)&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+renounceDistributor()&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+_addDistributor(account)&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ _removeDistributor(account)&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="170" width="170" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="B_T8Sf8zg4tagg7H50_3-13" value="Use" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;entryX=0.293;entryY=1.009;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.519;exitY=-0.003;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="B_T8Sf8zg4tagg7H50_3-12" target="B_T8Sf8zg4tagg7H50_3-7">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="244.07999999999993" y="178.17999999999995" as="sourcePoint" />
+            <mxPoint x="388.74" y="95.82" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="B_T8Sf8zg4tagg7H50_3-14" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;RetailerRole&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ isRetailer(address): bool&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ addRetailer(account)&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+renounceRetailer()&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+_addRetailer(account)&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ _removeRetailer(account)&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;" vertex="1" parent="1">
+          <mxGeometry x="550" y="170" width="170" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="B_T8Sf8zg4tagg7H50_3-15" value="Use" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;entryX=0.728;entryY=1.022;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.455;exitY=-0.012;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="B_T8Sf8zg4tagg7H50_3-14" target="B_T8Sf8zg4tagg7H50_3-7">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="448.23" y="179.57999999999998" as="sourcePoint" />
+            <mxPoint x="459.15999999999997" y="122.51999999999998" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="B_T8Sf8zg4tagg7H50_3-16" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;ConsumerRole&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ isConsumer(address): bool&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ addConsumer(account)&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+renounceConsumer()&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+_addConsumer(account)&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ _removeConsumer(account)&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;" vertex="1" parent="1">
+          <mxGeometry x="760" y="170" width="170" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="B_T8Sf8zg4tagg7H50_3-17" value="Use" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;entryX=1.031;entryY=0.471;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.502;exitY=-0.023;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="B_T8Sf8zg4tagg7H50_3-16" target="B_T8Sf8zg4tagg7H50_3-7">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="637.3499999999999" y="178.31999999999994" as="sourcePoint" />
+            <mxPoint x="491.9200000000001" y="121.31999999999994" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="B_T8Sf8zg4tagg7H50_3-18" value="Ownable" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="950" y="250" width="160" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="B_T8Sf8zg4tagg7H50_3-19" value="+ origOwner: address" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="B_T8Sf8zg4tagg7H50_3-18">
+          <mxGeometry y="26" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="B_T8Sf8zg4tagg7H50_3-20" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="B_T8Sf8zg4tagg7H50_3-18">
+          <mxGeometry y="52" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="B_T8Sf8zg4tagg7H50_3-21" value="+ owner(): address&#xa;+ isOwner(): bool&#xa;+ renounceOwnership()&#xa;+ transferOwnership(address)&#xa;+ _transferOwnership(address)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="B_T8Sf8zg4tagg7H50_3-18">
+          <mxGeometry y="60" width="160" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="B_T8Sf8zg4tagg7H50_3-22" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;SupplyChain&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ owner: address&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ upc: uint&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ sku: uint&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ items: mapping&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ itemsHistory: mapping&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ State: enum&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ defaultState: State&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ item: Struct&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ harvestCoffee(uint, address, string, string, string, string, string)&lt;br&gt;&lt;/p&gt;&lt;div&gt;&amp;nbsp;+ processCoffee(uint)&lt;/div&gt;&lt;div&gt;&amp;nbsp;+ packCoffee(uint)&lt;/div&gt;&lt;div&gt;&amp;nbsp;+ sellCoffee(uint)&lt;/div&gt;&lt;div&gt;&amp;nbsp;+ buyCoffee(uint)&lt;/div&gt;&lt;div&gt;&amp;nbsp;+ shipCoffee(uint)&lt;/div&gt;&lt;div&gt;&amp;nbsp;+ receiveCoffee(uint)&lt;/div&gt;&lt;div&gt;&amp;nbsp;+ purchaseCoffee(uint)&lt;br&gt;&lt;/div&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;" vertex="1" parent="1">
+          <mxGeometry x="370" y="440" width="360" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="B_T8Sf8zg4tagg7H50_3-23" value="Extends" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;entryX=0.444;entryY=1.014;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0;exitY=0.333;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="B_T8Sf8zg4tagg7H50_3-22" target="B_T8Sf8zg4tagg7H50_3-9">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="520" y="380" as="sourcePoint" />
+            <mxPoint x="670" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="B_T8Sf8zg4tagg7H50_3-24" value="Extends" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;entryX=0.365;entryY=1.007;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.15;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="B_T8Sf8zg4tagg7H50_3-22" target="B_T8Sf8zg4tagg7H50_3-12">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="450" y="439.97" as="sourcePoint" />
+            <mxPoint x="241.03999999999996" y="321.96000000000004" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="B_T8Sf8zg4tagg7H50_3-25" value="Extends" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;entryX=0.412;entryY=1.014;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.7;exitY=-0.033;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="B_T8Sf8zg4tagg7H50_3-22" target="B_T8Sf8zg4tagg7H50_3-14">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="474" y="410" as="sourcePoint" />
+            <mxPoint x="422.04999999999995" y="320.98" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="B_T8Sf8zg4tagg7H50_3-26" value="Extends" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;entryX=0.5;entryY=1.007;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1.013;exitY=0.256;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="B_T8Sf8zg4tagg7H50_3-22" target="B_T8Sf8zg4tagg7H50_3-16">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="562" y="407.03" as="sourcePoint" />
+            <mxPoint x="630.04" y="321.96000000000004" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="B_T8Sf8zg4tagg7H50_3-27" value="Extends" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;entryX=-0.006;entryY=0.478;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1.013;exitY=0.589;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="B_T8Sf8zg4tagg7H50_3-22" target="B_T8Sf8zg4tagg7H50_3-21">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="610" y="450" as="sourcePoint" />
+            <mxPoint x="940" y="340" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
