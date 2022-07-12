@@ -1,5 +1,5 @@
-<mxfile host="app.diagrams.net" modified="2022-07-12T20:29:55.791Z" agent="5.0 (Windows)" etag="CfG4xo-xsRwRjsKdexQ5" version="20.1.1" type="github">
-  <diagram name="Page-1" id="e7e014a7-5840-1c2e-5031-d8a46d1fe8dd">
+<mxfile host="app.diagrams.net" modified="2022-07-12T20:56:52.260Z" agent="5.0 (Windows)" etag="iQwdapzrCNdWtHnemvGV" version="20.1.1" type="github" pages="2">
+  <diagram name="Activity Diagram" id="e7e014a7-5840-1c2e-5031-d8a46d1fe8dd">
     <mxGraphModel dx="1483" dy="806" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="826" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
@@ -84,6 +84,104 @@
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="631.4299999999998" y="380.4499999999998" as="sourcePoint" />
             <mxPoint x="809.8899999999999" y="272.75" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="VJ4ubCF3NESTtYHULCIa" name="Sequence Diagram">
+    <mxGraphModel dx="1221" dy="664" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="oyXQGhHs9B5VYAmBMB1y-2" value="purchaseCoffee()" style="html=1;verticalAlign=bottom;startArrow=oval;startFill=1;endArrow=block;startSize=8;rounded=0;entryX=1.129;entryY=0.702;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1">
+          <mxGeometry width="60" relative="1" as="geometry">
+            <mxPoint x="755.71" y="430" as="sourcePoint" />
+            <mxPoint x="600" y="430.4" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nkH7ZKUvaOJXrr_QaU1O-9" value="processCoffee()" style="html=1;verticalAlign=bottom;startArrow=oval;startFill=1;endArrow=block;startSize=8;rounded=0;" edge="1" parent="1" target="nkH7ZKUvaOJXrr_QaU1O-1">
+          <mxGeometry width="60" relative="1" as="geometry">
+            <mxPoint x="250" y="240" as="sourcePoint" />
+            <mxPoint x="90" y="289.5" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="140" y="240" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nkH7ZKUvaOJXrr_QaU1O-11" value="sellCoffee()" style="html=1;verticalAlign=bottom;startArrow=oval;startFill=1;endArrow=block;startSize=8;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="60" relative="1" as="geometry">
+            <mxPoint x="250" y="300.00000000000006" as="sourcePoint" />
+            <mxPoint x="90" y="300.00000000000006" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oyXQGhHs9B5VYAmBMB1y-4" value="&lt;span class=&quot;pl-k&quot;&gt;&lt;span class=&quot;pl-en&quot;&gt;fetchCoffeeBufferOne&lt;/span&gt;&lt;/span&gt;()" style="html=1;verticalAlign=bottom;startArrow=oval;startFill=1;endArrow=block;startSize=8;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="60" relative="1" as="geometry">
+            <mxPoint x="754.26" y="510" as="sourcePoint" />
+            <mxPoint x="89.9973684210525" y="510" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nkH7ZKUvaOJXrr_QaU1O-1" value="Coffee" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="120" width="100" height="420" as="geometry" />
+        </mxCell>
+        <mxCell id="nkH7ZKUvaOJXrr_QaU1O-10" value="packCoffee()" style="html=1;verticalAlign=bottom;startArrow=oval;startFill=1;endArrow=block;startSize=8;rounded=0;" edge="1" parent="nkH7ZKUvaOJXrr_QaU1O-1">
+          <mxGeometry width="60" relative="1" as="geometry">
+            <mxPoint x="210" y="149.70999999999998" as="sourcePoint" />
+            <mxPoint x="50" y="149.70999999999998" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nkH7ZKUvaOJXrr_QaU1O-3" value="Farmer" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="208" y="120" width="100" height="420" as="geometry" />
+        </mxCell>
+        <mxCell id="nkH7ZKUvaOJXrr_QaU1O-7" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="nkH7ZKUvaOJXrr_QaU1O-3">
+          <mxGeometry x="45" y="70" width="10" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="nkH7ZKUvaOJXrr_QaU1O-8" value="harvestCoffee()" style="html=1;verticalAlign=bottom;startArrow=oval;startFill=1;endArrow=block;startSize=8;rounded=0;" edge="1" parent="nkH7ZKUvaOJXrr_QaU1O-3">
+          <mxGeometry width="60" relative="1" as="geometry">
+            <mxPoint x="42" y="90" as="sourcePoint" />
+            <mxPoint x="-118" y="90" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nkH7ZKUvaOJXrr_QaU1O-4" value="Distributor" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="375" y="120" width="100" height="420" as="geometry" />
+        </mxCell>
+        <mxCell id="nkH7ZKUvaOJXrr_QaU1O-13" value="buyCoffee()" style="html=1;verticalAlign=bottom;startArrow=oval;startFill=1;endArrow=block;startSize=8;rounded=0;entryX=1.129;entryY=0.702;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="nkH7ZKUvaOJXrr_QaU1O-4" target="nkH7ZKUvaOJXrr_QaU1O-7">
+          <mxGeometry width="60" relative="1" as="geometry">
+            <mxPoint x="45" y="210" as="sourcePoint" />
+            <mxPoint x="-105" y="209.9999999999999" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nkH7ZKUvaOJXrr_QaU1O-12" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="nkH7ZKUvaOJXrr_QaU1O-4">
+          <mxGeometry x="45" y="180" width="10" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="nkH7ZKUvaOJXrr_QaU1O-17" value="receiveCoffee()" style="html=1;verticalAlign=bottom;startArrow=oval;startFill=1;endArrow=block;startSize=8;rounded=0;entryX=1.129;entryY=0.702;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="nkH7ZKUvaOJXrr_QaU1O-4">
+          <mxGeometry width="60" relative="1" as="geometry">
+            <mxPoint x="210.71" y="270" as="sourcePoint" />
+            <mxPoint x="54.99999999999997" y="270.4" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nkH7ZKUvaOJXrr_QaU1O-5" value="Retailer" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="543" y="120" width="100" height="420" as="geometry" />
+        </mxCell>
+        <mxCell id="nkH7ZKUvaOJXrr_QaU1O-14" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="nkH7ZKUvaOJXrr_QaU1O-5">
+          <mxGeometry x="45" y="220" width="10" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="oyXQGhHs9B5VYAmBMB1y-3" value="&lt;span class=&quot;pl-k&quot;&gt;&lt;span class=&quot;pl-en&quot;&gt;fetchCoffeeBufferOne&lt;/span&gt;&lt;/span&gt;()" style="html=1;verticalAlign=bottom;startArrow=oval;startFill=1;endArrow=block;startSize=8;rounded=0;" edge="1" parent="nkH7ZKUvaOJXrr_QaU1O-5" target="nkH7ZKUvaOJXrr_QaU1O-1">
+          <mxGeometry width="60" relative="1" as="geometry">
+            <mxPoint x="210.71000000000004" y="360" as="sourcePoint" />
+            <mxPoint x="55" y="360.4000000000001" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nkH7ZKUvaOJXrr_QaU1O-6" value="Consumer" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="710" y="120" width="100" height="420" as="geometry" />
+        </mxCell>
+        <mxCell id="oyXQGhHs9B5VYAmBMB1y-1" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="nkH7ZKUvaOJXrr_QaU1O-6">
+          <mxGeometry x="45" y="280" width="10" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="nkH7ZKUvaOJXrr_QaU1O-15" value="shipCoffee()" style="html=1;verticalAlign=bottom;startArrow=oval;startFill=1;endArrow=block;startSize=8;rounded=0;entryX=-0.23;entryY=0.196;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="nkH7ZKUvaOJXrr_QaU1O-14">
+          <mxGeometry width="60" relative="1" as="geometry">
+            <mxPoint x="430" y="360" as="sourcePoint" />
+            <mxPoint x="374.99999999999994" y="460.39999999999986" as="targetPoint" />
           </mxGeometry>
         </mxCell>
       </root>
