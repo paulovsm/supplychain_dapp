@@ -2,7 +2,7 @@
 
 
 >
-## Contract Address
+## Contract Address (Rinkeby)
 >
     ---- 
 >
