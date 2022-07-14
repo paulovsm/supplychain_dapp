@@ -18,6 +18,8 @@
  *
  */
 
+ const fs = require('fs');
+
  const HDWalletProvider = require('truffle-hdwallet-provider');
  //const infuraKey = "<INFURA KEY>"
  const infuraKey = fs.readFileSync(".rinkeby-infurakey").toString().trim();
