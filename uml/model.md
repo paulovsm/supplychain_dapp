@@ -54,4 +54,4 @@
 
 | Libraries used | Version | Motivation |
 |:---:|:---:|:---:|
-|IPFS not used|N/A|N/A|
+|IPFS|0.13.1|To host web app static resource files publicly|
