@@ -1,63 +1,8 @@
+@paulovsm ➜ /workspaces/supplychain_dapp/application (main ✗) $ truffle migrate --reset --network rinkeby
+
 Compiling your contracts...
 ===========================
-> Compiling ./contracts/coffeebase/SupplyChain.sol
-> Compilation warnings encountered:
-
-    Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.
---> project:/contracts/coffeeaccesscontrol/ConsumerRole.sol
-
-,Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.
---> project:/contracts/coffeeaccesscontrol/DistributorRole.sol
-
-,Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.
---> project:/contracts/coffeeaccesscontrol/FarmerRole.sol
-
-,Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.
---> project:/contracts/coffeeaccesscontrol/RetailerRole.sol
-
-,Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.
---> project:/contracts/coffeeaccesscontrol/Roles.sol
-
-,Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.
---> project:/contracts/coffeebase/SupplyChain.sol
-
-,Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.
---> project:/contracts/coffeecore/Ownable.sol
-
-,Warning: Visibility for constructor is ignored. If you want the contract to be non-deployable, making it "abstract" is sufficient.
-  --> project:/contracts/coffeeaccesscontrol/ConsumerRole.sol:18:3:
-   |
-18 |   constructor() public {
-   |   ^ (Relevant source part starts here and spans across multiple lines).
-
-,Warning: Visibility for constructor is ignored. If you want the contract to be non-deployable, making it "abstract" is sufficient.
-  --> project:/contracts/coffeeaccesscontrol/DistributorRole.sol:18:3:
-   |
-18 |   constructor() public {
-   |   ^ (Relevant source part starts here and spans across multiple lines).
-
-,Warning: Visibility for constructor is ignored. If you want the contract to be non-deployable, making it "abstract" is sufficient.
-  --> project:/contracts/coffeeaccesscontrol/FarmerRole.sol:18:3:
-   |
-18 |   constructor() public {
-   |   ^ (Relevant source part starts here and spans across multiple lines).
-
-,Warning: Visibility for constructor is ignored. If you want the contract to be non-deployable, making it "abstract" is sufficient.
-  --> project:/contracts/coffeeaccesscontrol/RetailerRole.sol:18:3:
-   |
-18 |   constructor() public {
-   |   ^ (Relevant source part starts here and spans across multiple lines).
-
-,Warning: Visibility for constructor is ignored. If you want the contract to be non-deployable, making it "abstract" is sufficient.
-   --> project:/contracts/coffeebase/SupplyChain.sol:140:3:
-    |
-140 |   constructor() public payable {
-    |   ^ (Relevant source part starts here and spans across multiple lines).
-
-
-> Artifacts written to /workspaces/supplychain_dapp/application/build/contracts
-> Compiled successfully using:
-   - solc: 0.8.15+commit.e14f2714.Emscripten.clang
+> Everything is up to date, there is nothing to compile.
 
 
 Migrations dry-run (simulation)
@@ -72,10 +17,10 @@ Migrations dry-run (simulation)
 
    Replacing 'Migrations'
    ----------------------
-   > block number:        11047395
-   > block timestamp:     1658170030
+   > block number:        11047994
+   > block timestamp:     1658179032
    > account:             0x3Bcae4baEaD03E4dD8F113ed80FF11D48CFE5428
-   > balance:             0.198328215634265441
+   > balance:             0.146999937096265441
    > gas used:            250154 (0x3d12a)
    > gas price:           10 gwei
    > value sent:          0 ETH
@@ -90,10 +35,10 @@ Migrations dry-run (simulation)
 
    Replacing 'FarmerRole'
    ----------------------
-   > block number:        11047397
-   > block timestamp:     1658170030
+   > block number:        11047996
+   > block timestamp:     1658179033
    > account:             0x3Bcae4baEaD03E4dD8F113ed80FF11D48CFE5428
-   > balance:             0.194562685634265441
+   > balance:             0.143234407096265441
    > gas used:            330640 (0x50b90)
    > gas price:           10 gwei
    > value sent:          0 ETH
@@ -102,10 +47,10 @@ Migrations dry-run (simulation)
 
    Replacing 'DistributorRole'
    ---------------------------
-   > block number:        11047398
-   > block timestamp:     1658170030
+   > block number:        11047997
+   > block timestamp:     1658179033
    > account:             0x3Bcae4baEaD03E4dD8F113ed80FF11D48CFE5428
-   > balance:             0.190794095634265441
+   > balance:             0.139465817096265441
    > gas used:            376859 (0x5c01b)
    > gas price:           10 gwei
    > value sent:          0 ETH
@@ -114,10 +59,10 @@ Migrations dry-run (simulation)
 
    Replacing 'RetailerRole'
    ------------------------
-   > block number:        11047399
-   > block timestamp:     1658170031
+   > block number:        11047998
+   > block timestamp:     1658179033
    > account:             0x3Bcae4baEaD03E4dD8F113ed80FF11D48CFE5428
-   > balance:             0.187104165634265441
+   > balance:             0.135775887096265441
    > gas used:            368993 (0x5a161)
    > gas price:           10 gwei
    > value sent:          0 ETH
@@ -126,10 +71,10 @@ Migrations dry-run (simulation)
 
    Replacing 'ConsumerRole'
    ------------------------
-   > block number:        11047400
-   > block timestamp:     1658170031
+   > block number:        11047999
+   > block timestamp:     1658179034
    > account:             0x3Bcae4baEaD03E4dD8F113ed80FF11D48CFE5428
-   > balance:             0.183335935634265441
+   > balance:             0.132007657096265441
    > gas used:            376823 (0x5bff7)
    > gas price:           10 gwei
    > value sent:          0 ETH
@@ -138,34 +83,34 @@ Migrations dry-run (simulation)
 
    Replacing 'SupplyChain'
    -----------------------
-   > block number:        11047401
-   > block timestamp:     1658170031
+   > block number:        11048000
+   > block timestamp:     1658179034
    > account:             0x3Bcae4baEaD03E4dD8F113ed80FF11D48CFE5428
-   > balance:             0.153295635634265441
-   > gas used:            3004030 (0x2dd67e)
+   > balance:             0.101851047096265441
+   > gas used:            3015661 (0x2e03ed)
    > gas price:           10 gwei
    > value sent:          0 ETH
-   > total cost:          0.0300403 ETH
+   > total cost:          0.03015661 ETH
 
 
    Replacing 'Ownable'
    -------------------
-   > block number:        11047402
-   > block timestamp:     1658170032
+   > block number:        11048001
+   > block timestamp:     1658179034
    > account:             0x3Bcae4baEaD03E4dD8F113ed80FF11D48CFE5428
-   > balance:             0.150158105634265441
+   > balance:             0.098713517096265441
    > gas used:            313753 (0x4c999)
    > gas price:           10 gwei
    > value sent:          0 ETH
    > total cost:          0.00313753 ETH
 
    -------------------------------------
-   > Total cost:          0.04771098 ETH
+   > Total cost:          0.04782729 ETH
 
 Summary
 =======
 > Total deployments:   7
-> Final cost:          0.05021252 ETH
+> Final cost:          0.05032883 ETH
 
 
 
@@ -182,13 +127,13 @@ Starting migrations...
 
    Replacing 'Migrations'
    ----------------------
-   > transaction hash:    0xbc9bd8469fe386ed1f3d586b18e0a488d22ef2a496d381f258b5e5485cee6c7c
-   > Blocks: 1            Seconds: 16
-   > contract address:    0x256c615dAfA6188547A8A72e5Ab24Ed0Da7Dd689
-   > block number:        11047400
-   > block timestamp:     1658170049
+   > transaction hash:    0x0a789589c9a73cdbbd4ac387075c95293ff7888302afe5c0b8cfad898c71290e
+   > Blocks: 2            Seconds: 16
+   > contract address:    0x5578849Cd0D92c7012D8f9A8c2200Ca9D9B664db
+   > block number:        11047999
+   > block timestamp:     1658179051
    > account:             0x3Bcae4baEaD03E4dD8F113ed80FF11D48CFE5428
-   > balance:             0.198328215634265441
+   > balance:             0.146999937096265441
    > gas used:            250154 (0x3d12a)
    > gas price:           10 gwei
    > value sent:          0 ETH
@@ -205,13 +150,13 @@ Starting migrations...
 
    Replacing 'FarmerRole'
    ----------------------
-   > transaction hash:    0x3c4407552284bc7be998d13588402b192373a6bfaeec51dc9acaba0bb1530cce
+   > transaction hash:    0xcaa38f5f1675d6cf92db95984e0df5f28eae8e9c26bd68f39da0c0fd718e770f
    > Blocks: 0            Seconds: 12
-   > contract address:    0xfF5EF9640e0a2a6EFCa69c9b6F4015e8576526De
-   > block number:        11047402
-   > block timestamp:     1658170079
+   > contract address:    0x73FFA168478DD55784B6f70da37353A5dD3219EF
+   > block number:        11048001
+   > block timestamp:     1658179081
    > account:             0x3Bcae4baEaD03E4dD8F113ed80FF11D48CFE5428
-   > balance:             0.194562685634265441
+   > balance:             0.143234407096265441
    > gas used:            330640 (0x50b90)
    > gas price:           10 gwei
    > value sent:          0 ETH
@@ -220,13 +165,13 @@ Starting migrations...
 
    Replacing 'DistributorRole'
    ---------------------------
-   > transaction hash:    0x1550471b979a15ab53b31eb8a048243423e41adcd6dd6025542181070488a942
+   > transaction hash:    0x44c862bcdc6008c377c8c208764f0c82a2da63f6677a6998fb1eb3b388f9e6fb
    > Blocks: 0            Seconds: 12
-   > contract address:    0x5a02f11253C07c1a1AD30EEA0Fd52e3FFf1c5809
-   > block number:        11047403
-   > block timestamp:     1658170094
+   > contract address:    0xfEf40Db86fF31E8Ca12249A82A5413B0788f236b
+   > block number:        11048002
+   > block timestamp:     1658179096
    > account:             0x3Bcae4baEaD03E4dD8F113ed80FF11D48CFE5428
-   > balance:             0.190794095634265441
+   > balance:             0.139465817096265441
    > gas used:            376859 (0x5c01b)
    > gas price:           10 gwei
    > value sent:          0 ETH
@@ -235,13 +180,13 @@ Starting migrations...
 
    Replacing 'RetailerRole'
    ------------------------
-   > transaction hash:    0xdef2a7888ea379b1cbf6d98183a0238b4acb23bc695f47944786b3b21c44e68d
+   > transaction hash:    0x96f814f27b9e85c78fbcfb1dce6adef83dd0d663b8a5d83c8701334b3702f345
    > Blocks: 0            Seconds: 12
-   > contract address:    0x0Aa993344768e9504DB7F798759FD15E04020aAd
-   > block number:        11047404
-   > block timestamp:     1658170109
+   > contract address:    0xF9862360543d5e0161cC81Bc7Ec90c1a71280141
+   > block number:        11048003
+   > block timestamp:     1658179111
    > account:             0x3Bcae4baEaD03E4dD8F113ed80FF11D48CFE5428
-   > balance:             0.187104165634265441
+   > balance:             0.135775887096265441
    > gas used:            368993 (0x5a161)
    > gas price:           10 gwei
    > value sent:          0 ETH
@@ -250,13 +195,13 @@ Starting migrations...
 
    Replacing 'ConsumerRole'
    ------------------------
-   > transaction hash:    0xfc6efe0883a7fbe667066bbd2ef05ddec43c9fd7dc870560c7d0d1921416c291
+   > transaction hash:    0x037398905b76b74077086246014a7d2d54320bd4bdc740b5cb07316477d92402
    > Blocks: 0            Seconds: 12
-   > contract address:    0xe52255fE6785ed0E6aD1db38F3f1759dF3d15151
-   > block number:        11047405
-   > block timestamp:     1658170124
+   > contract address:    0x6Bbf18d28A97a0d18041DB258991002A3aFd6d61
+   > block number:        11048004
+   > block timestamp:     1658179126
    > account:             0x3Bcae4baEaD03E4dD8F113ed80FF11D48CFE5428
-   > balance:             0.183335935634265441
+   > balance:             0.132007657096265441
    > gas used:            376823 (0x5bff7)
    > gas price:           10 gwei
    > value sent:          0 ETH
@@ -265,28 +210,28 @@ Starting migrations...
 
    Replacing 'SupplyChain'
    -----------------------
-   > transaction hash:    0x54dc54f16d7105d932c3d54157a8de010d910f527d24184fd4307e452fde8092
+   > transaction hash:    0xecf17ee70ddcdce828e4432b9aadba03d77c7f851dc4596a4a6c238ebf6abc71
    > Blocks: 0            Seconds: 12
-   > contract address:    0x9a5B63C897105Ad31ce8fFB3FB77062314dc0c8b
-   > block number:        11047406
-   > block timestamp:     1658170139
+   > contract address:    0x98BfE69b60c200DbcCfBDCb1d9A145a9b77ca0e9
+   > block number:        11048005
+   > block timestamp:     1658179141
    > account:             0x3Bcae4baEaD03E4dD8F113ed80FF11D48CFE5428
-   > balance:             0.153295635634265441
-   > gas used:            3004030 (0x2dd67e)
+   > balance:             0.101851047096265441
+   > gas used:            3015661 (0x2e03ed)
    > gas price:           10 gwei
    > value sent:          0 ETH
-   > total cost:          0.0300403 ETH
+   > total cost:          0.03015661 ETH
 
 
    Replacing 'Ownable'
    -------------------
-   > transaction hash:    0x8c5a056e200f86804393370c46d3ff226797d18aecab0d8f59841093e486bf3d
+   > transaction hash:    0xa44f0cb5c9a76893769b88590ad3d02a3d6bbef580b2935fb8317bd17f01c65e
    > Blocks: 0            Seconds: 12
-   > contract address:    0x426975C9030F30f996b20Fa52b4c959450b47f97
-   > block number:        11047407
-   > block timestamp:     1658170154
+   > contract address:    0x0C923f5F75cc23E16bd150824C8cFfad8a5913fD
+   > block number:        11048006
+   > block timestamp:     1658179156
    > account:             0x3Bcae4baEaD03E4dD8F113ed80FF11D48CFE5428
-   > balance:             0.150158105634265441
+   > balance:             0.098713517096265441
    > gas used:            313753 (0x4c999)
    > gas price:           10 gwei
    > value sent:          0 ETH
@@ -295,9 +240,9 @@ Starting migrations...
    > Saving migration to chain.
    > Saving artifacts
    -------------------------------------
-   > Total cost:          0.04771098 ETH
+   > Total cost:          0.04782729 ETH
 
 Summary
 =======
 > Total deployments:   7
-> Final cost:          0.05021252 ETH
+> Final cost:          0.05032883 ETH

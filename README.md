@@ -4,7 +4,7 @@
 >
 ## Contract Address (Rinkeby)
 >
-[0x9a5B63C897105Ad31ce8fFB3FB77062314dc0c8b](https://rinkeby.etherscan.io/address/0x9a5B63C897105Ad31ce8fFB3FB77062314dc0c8b)
+[0x98BfE69b60c200DbcCfBDCb1d9A145a9b77ca0e9](https://rinkeby.etherscan.io/address/0x98BfE69b60c200DbcCfBDCb1d9A145a9b77ca0e9)
 >
 
 ## Requirement 1: Project write-up - UML

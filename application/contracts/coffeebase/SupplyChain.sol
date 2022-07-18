@@ -236,6 +236,8 @@ contract SupplyChain is Ownable, ConsumerRole, DistributorRole, FarmerRole, Reta
     // Call modifer to send any excess ether back to buyer
      checkValue(_upc)    
     {
+
+    address payable farmerID = payable(items[_upc].ownerID);
     
     // Update the appropriate fields - ownerID, distributorID, itemState
     items[_upc].ownerID = msg.sender;
@@ -243,8 +245,7 @@ contract SupplyChain is Ownable, ConsumerRole, DistributorRole, FarmerRole, Reta
     items[_upc].itemState = State.Sold;
     
     // Transfer money to farmer
-    address payable payableSender = payable(msg.sender);
-    payableSender.transfer(items[_upc].productPrice);
+    farmerID.transfer(items[_upc].productPrice);
     
     // emit the appropriate event]
     emit Sold(_upc);
