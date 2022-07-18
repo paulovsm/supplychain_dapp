@@ -72,3 +72,11 @@ In a separate terminal window, launch the DApp:
 ```
 npm run dev
 ```
+### DApp UI 
+
+![DApp UI 1](/application/app-log/Dapp_UI_1.png)
+![DApp UI 2](/application/app-log/Dapp_UI_2.png)
+![DApp UI 3](/application/app-log/Dapp_UI_3.png)
+
+### Transaction History (Example)
+![Tx History](/application/app-log/item_transaction_history.png)
