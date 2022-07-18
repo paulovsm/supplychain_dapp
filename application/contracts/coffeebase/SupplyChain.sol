@@ -161,7 +161,7 @@ contract SupplyChain is Ownable, ConsumerRole, DistributorRole, FarmerRole, Reta
     {
     // Add the new item as part of Harvest
     items[_upc].sku = sku;
-    items[_upc].upc = upc;
+    items[_upc].upc = _upc;
     items[_upc].ownerID = _originFarmerID;
     items[_upc].originFarmerID = _originFarmerID;
     items[_upc].originFarmName = _originFarmName;

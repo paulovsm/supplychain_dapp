@@ -3,106 +3,123 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>Fair Trade Coffee</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.6.0.min.js" type="text/javascript"></script>
+    <script src="js/web3.min.js" type="text/javascript"></script>
+    <script src="js/truffle-contract.js" type="text/javascript"></script>
+    <script src="js/app.js" type="text/javascript"></script>
 </head>
 
 <body>
-    <div class="container">
-        <h1 style="text-align: center;">Fair Trade Coffee</h1>
-        <hr>
-        <p style="text-align: center;">Prove the authenticity of coffee using the Ethereum blockchain.</p>
-    </div>
+<div class="container">
+    <h1 style="text-align: center;">Fair Trade Coffee</h1>
+    <hr>
+    <p style="text-align: center;">Prove the authenticity of coffee beans using the Ethereum blockchain.</p>
+</div>
 
-    <div id="ftc-harvest">
-        <h2>Product Overview</h2>
-        <div class="form-group">
-            SKU
-            <br>
-            <input class="input-field" type="number" id="sku" name="sku" value=1><br>
-            UPC
-            <br>
-            <input type="number" id="upc" name="upc" value=1><br>
-            Current Owner ID
-            <br>
-            <input type="text" id="ownerID" name="ownerID" value="0x963865f57804b38459dd4b2da2f760211a200438" size="50"><br>
-            <div class=button-div>
-                <button class="btn-fetchOne" id="button" type="button" data-id="9">Fetch Data 1</button>
-                <button class="btn-fetchTwo" id="button" type="button" data-id="10">Fetch Data 2</button>
-            </div>
-        </div>
-        <div class=form-break></div>
-        <h2>Farm Details</h2>
-        <div class="form-group">
-            Farmer ID
-            <br>
-            <input type="text" id="originFarmerID" name="originFarmerID" value="0x99c289eb2aacec289631a5ddf62cf27a63d4494f"
-                size="50"><br>
-            Farm Name
-            <br>
-            <input type="text" id="originFarmName" name="originFarmName" value="John Doe"><br>
-            Farm Information
-            <br>
-            <input type="text" id="originFarmInformation" name="originFarmInformation" value="Yarra Valley"><br>
-            Farm Latitude
-            <br>
-            <input type="text" id="originFarmLatitude" name="originFarmLatitude" value="-38.239770"><br>
-            Farm Longitude
-            <br>
-            <input type="text" id="originFarmLongitude" name="originFarmLongitude" value="144.341490"><br>
-            <br>
-            <button class="btn-harvest" id="button" type="button" data-id="1">Harvest</button>
-            <button class="btn-process" id="button" type="button" data-id="2">Process</button>
-            <button class="btn-pack" id="button" type="button" data-id="3">Pack</button>
-            <button class="btn-forsale" id="button" type="button" data-id="4">ForSale</button>
-        </div>
-        <div class=form-break></div>
-        <h2>Product Details</h2>
-        <div class="form-group">
-            Product Notes
-            <br>
-            <input type="text" id="productNotes" name="productNotes" value="Best beans for Espresso" size="60"><br>
-            Product Price
-            <br>
-            <input type="number" id="productPrice" name="productPrice" value=1>ETH<br>
-            Distributor ID
-            <br>
-            <input type="text" id="distributorID" name="distributorID" value="0xf1b1bcd24dad92303dd9fe78be639f7bcf9c238d"
-                size="50">
-            <br>
-            Retailer ID
-            <br>
-            <input type="text" id="retailerID" name="retailerID" value="0x0fb2bfefd526966c87efa19f6693d50971763fc2"
-                size="50"><br>
-            Consumer ID
-            <br>
-            <input type="text" id="consumerID" name="consumerID" value="0x5d777e9127b28fb119e81a6304278a0a21bef1c4"
-                size="50"><br>
-            <br>
-            <button class="btn-buy" id="button" type="button" data-id="5">Buy</button>
-            <button class="btn-ship" id="button" type="button" data-id="6">Ship</button>
-            <button class="btn-receive" id="button" type="button" data-id="7">Receive</button>
-            <button class="btn-purchase" id="button" type="button" data-id="8">Purchase</button>
-        </div>
-        <div class=form-break></div>
-        <hr>
-    </div>
-
-    <h2>Transaction History<span id="ftc-history"></span></h2>
-    <div>
-        <ul id="ftc-events">
-            <!-- Events will appear here from app.js -->
-        </ul>
+<div id="ftc-harvest">
+    <h2>MetaMask Injected Data</h2>
+    <div class="form-group">
+        Authorized by user ethereum's account
         <br>
-        <hr>
+        <input class="input-field" id="metamaskAccountLabel" name="metamaskAccountLabel" readonly type="text"><br>
+        <br>
     </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- <script src="js/web3.min.js"></script> -->
-    <script src="js/truffle-contract.js"></script>
-    <script src="js/app.js"></script>
+    <h2>Roles setup</h2>
+    <div class="form-group">
+        Contract Owner ID
+        <br>
+        <input id="contractOwnerID" name="contractOwnerID" readonly size="50" type="text"><br>
+        <button class="btn-set-access-control-for-all-roles" id="button" type="button">Set access control for all
+            roles (as
+            contractOwner)
+        </button>
+    </div>
+
+    <h2>Product Overview</h2>
+    <div class="form-group">
+        SKU
+        <br>
+        <input class="input-field" id="sku" name="sku" readonly type="number"><br>
+        UPC
+        <br>
+        <input id="upc" name="upc" type="number"><br>
+        <div class=button-div>
+            <button class="btn-fetchOne" id="button" type="button">Fetch Data One</button>
+            <button class="btn-fetchTwo" id="button" type="button">Fetch Data Two</button>
+        </div>
+    </div>
+    <div class=form-break></div>
+    <h2>Farm Details</h2>
+    <div class="form-group">
+        Farmer ID
+        <br>
+        <input id="originFarmerID" name="originFarmerID" readonly size="50" type="text"><br>
+        Farm Name
+        <br>
+        <input id="originFarmName" name="originFarmName" readonly type="text"><br>
+        Farm Information
+        <br>
+        <input id="originFarmInformation" name="originFarmInformation" readonly type="text"><br>
+        Farm Latitude
+        <br>
+        <input id="originFarmLatitude" name="originFarmLatitude" readonly type="text"><br>
+        Farm Longitude
+        <br>
+        <input id="originFarmLongitude" name="originFarmLongitude" readonly type="text"><br>
+        <br>
+        <button class="btn-harvest" id="button" type="button">Harvest Coffee Beans</button> ->
+        <button class="btn-process" id="button" type="button">Process Coffee Beans</button> ->
+        <button class="btn-pack" id="button" type="button">Pack Coffee Beans</button> ->
+        <button class="btn-for-sale" id="button" type="button">Put Coffee Beans for sale</button>
+    </div>
+    <div class=form-break></div>    
+    <h2>Product Details</h2>
+    <div class="form-group">
+        Product Notes
+        <br>
+        <input id="productNotes" name="productNotes" readonly size="60" type="text"><br>
+        Product Price
+        <br>
+        <input id="productPrice" name="productPrice" readonly type="number">ETH<br>
+        Distributor ID
+        <br>
+        <input id="distributorID" name="distributorID" readonly size="50" type="text">
+        <br>
+        Retailer ID
+        <br>
+        <input id="retailerID" name="retailerID" readonly size="50" type="text"><br>
+        Distributor ID
+        <br>
+        <input id="consumerID" name="consumerID" readonly size="50" type="text"><br>
+        <br>
+        <button class="btn-buy" id="button" type="button">Buy Coffee Beans</button> ->
+        <button class="btn-ship" id="button" type="button">Ship Coffee Beans</button> ->
+        <button class="btn-receive" id="button" type="button">Receive Coffee Beans</button> ->
+        <button class="btn-purchase" id="button" type="button">Purchase Coffee Beans</button>
+    </div>
+    <div class=form-break></div>
+    <hr>
+</div>
+
+<h2>Item Information</h2>
+<div id="ftc-item"></div>
+
+<hr>
+
+<h2>Transaction History<span id="ftc-history"></span></h2>
+<div>
+    <ul id="ftc-events">
+        <!-- Events will appear here from app.js -->
+    </ul>
+    <br>
+    <hr>
+</div>
+
 </body>
 
 </html>
