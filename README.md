@@ -1,17 +1,24 @@
 # Supply Chain DApp
 
+[Dapp URL](https://infura-ipfs.io/ipfs/QmYYrkgtuaxwgjLYdBaWT3e7vTwuaWDjc6Sz4Dd8qEeytu)
 
 >
 ## Contract Address (Rinkeby)
 >
 [0x98BfE69b60c200DbcCfBDCb1d9A145a9b77ca0e9](https://rinkeby.etherscan.io/address/0x98BfE69b60c200DbcCfBDCb1d9A145a9b77ca0e9)
->
+
+Transaction ID - 0xecf17ee70ddcdce828e4432b9aadba03d77c7f851dc4596a4a6c238ebf6abc71
+
+[Contract creation log](truffle-logs/deploy_rinkeby_log.txt)
+
+<br>
 
 ## Requirement 1: Project write-up - UML
 
 ### Activity Diagram
 [Model Diagrams](uml/model.md)
 
+<br>
 
 ## Requirement 2: Project write-up - Libraries
 ### Libraries Version

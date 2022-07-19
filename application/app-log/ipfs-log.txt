@@ -1,0 +1,10 @@
+@paulovsm ➜ /workspaces/supplychain_dapp/application (main ✗) $ ipfs add -r dist
+added QmfBVR1CGnA1X8koPb4XZwRGEKmfpFbLVZagGAkFLA2bu8 dist/SupplyChain.json
+added QmaGkcB85CUhn6ajY5GatKBG3nS4wGP8vTmkSySDNJfSFj dist/app.js
+added Qmc3U5rNdcUQjMzAb57qZmhTUmfDCEcARifs8naeNL85B7 dist/index.html
+added QmNkWKjTSf67aXVS214sySFE8r82Le4NLLorTwTCWCLKRK dist/jquery-3.6.0.min.js
+added QmT6hpj3kgkvxocCJVUKAJJS66F77dWkFc5VbV6B2DihvM dist/style.css
+added QmSdJw5B22kzcqNP24A23Rp2boMwqCL7wY89WW8Ltvmf7D dist/truffle-config.js
+added QmWSAhAihumy7wvnv6kbGfUKkEEVdG1EqVbMAR8bnTbAU9 dist/truffle-contract.js
+added QmWSfPuxJZkUyeuAkXJEEBJHn6aZNt4WoqTDZEo7Q8eEuq dist/web3.min.js
+added QmYYrkgtuaxwgjLYdBaWT3e7vTwuaWDjc6Sz4Dd8qEeytu dist

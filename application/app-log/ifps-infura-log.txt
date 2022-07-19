@@ -1,0 +1,13 @@
+@paulovsm ➜ /workspaces/supplychain_dapp/application (main ✗) $ curl "https://ipfs.infura.io:5001/api/v0/add?pin=true&wrap-with-directory=true" \
+> -X POST \
+> -H "Content-Type: multipart/form-data" \
+> -F file=@dist/app.js -F file=@dist/index.html -F file=@dist/jquery-3.6.0.min.js -F file=@dist/style.css -F file=@dist/SupplyChain.json -F file=@dist/truffle-config.js -F file=@dist/truffle-contract.js -F file=@dist/web3.min.js
+{"Name":"app.js","Hash":"QmaGkcB85CUhn6ajY5GatKBG3nS4wGP8vTmkSySDNJfSFj","Size":"17050"}
+{"Name":"index.html","Hash":"Qmc3U5rNdcUQjMzAb57qZmhTUmfDCEcARifs8naeNL85B7","Size":"4624"}
+{"Name":"jquery-3.6.0.min.js","Hash":"QmNkWKjTSf67aXVS214sySFE8r82Le4NLLorTwTCWCLKRK","Size":"89515"}
+{"Name":"style.css","Hash":"QmT6hpj3kgkvxocCJVUKAJJS66F77dWkFc5VbV6B2DihvM","Size":"1045"}
+{"Name":"SupplyChain.json","Hash":"QmfBVR1CGnA1X8koPb4XZwRGEKmfpFbLVZagGAkFLA2bu8","Size":"1047902"}
+{"Name":"truffle-config.js","Hash":"QmSdJw5B22kzcqNP24A23Rp2boMwqCL7wY89WW8Ltvmf7D","Size":"5467"}
+{"Name":"truffle-contract.js","Hash":"QmWSAhAihumy7wvnv6kbGfUKkEEVdG1EqVbMAR8bnTbAU9","Size":"267701"}
+{"Name":"web3.min.js","Hash":"QmWSfPuxJZkUyeuAkXJEEBJHn6aZNt4WoqTDZEo7Q8eEuq","Size":"141104"}
+{"Name":"","Hash":"QmYYrkgtuaxwgjLYdBaWT3e7vTwuaWDjc6Sz4Dd8qEeytu","Size":"1574868"}
